@@ -16,7 +16,6 @@ header {
 
   font-size: 130%;
 
-
   h1 {
     margin: 0;
     line-height: 0.8em !important;
@@ -24,9 +23,7 @@ header {
 }
 
 .rc-heading__main  {
-  color: #222;
-
-  // text-shadow: 2px 2px 0px #fefefe;
+  color: #111;
 }
 .rc-heading__subhead, .rc-heading__year {
   color: #E74141;
@@ -80,10 +77,20 @@ footer {
 
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
+}
+
+#what, #where, #to-bring, #sponsors, #coc {
+  h2 {
+    font-weight: 100;
+    line-height: 3em;
+    text-align: center;
+
+    border-bottom: 1px solid black;
+  }
 }
