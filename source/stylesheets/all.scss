@@ -6,6 +6,12 @@ header {
   font-size: 28pt;
   text-align: center;
   height: 100vh;
+
+  h1, h2 {
+    font-weight: bold;
+    text-shadow: #484848 2px 2px;
+    color: white;
+  }
 }
 
 header p {
@@ -19,12 +25,6 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-}
-
-h1, h2 {
-  font-weight: bold;
-  text-shadow: #484848 2px 2px;
-  color: white;
 }
 
 html, body {
@@ -41,5 +41,7 @@ section {
 .container {
   width: 100%;
   background: white;
+  padding-top: 20px;
+  box-shadow: inset 0px 5px 5px #DDD;
 }
 
