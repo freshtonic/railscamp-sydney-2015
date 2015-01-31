@@ -1,10 +1,13 @@
 
 header {
   font-family: 'Amatic SC', cursive;
-  font-weight: bold;
-  font-size: 72pt;
+  font-size: 36pt;
   margin: auto;
   width: 50%;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 html, body {
