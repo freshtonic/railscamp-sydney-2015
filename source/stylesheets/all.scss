@@ -1,15 +1,30 @@
 header {
   font-family: 'Amatic SC', cursive;
   font-size: 2.5em;
-  margin: auto;
-  width: 50%;
-  text-align: center;
   min-height: 100vh;
 
   h1, h2 {
     font-weight: bold;
     text-shadow: #484848 2px 2px;
     color: white;
+  }
+}
+
+div.logo {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 305px;
+  font-family: 'Voltaire', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: #484848 2px 2px;
+  color: white;
+  .red {
+    color: red;
+  }
+  .logo-right {
+    margin-top: 0px;
+    float: right;
   }
 }
 
