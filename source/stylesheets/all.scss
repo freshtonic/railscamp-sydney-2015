@@ -22,14 +22,6 @@ header p {
   color: white;
 }
 
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
 html, body {
   margin: 0;
 }
@@ -46,8 +38,15 @@ section {
 
 .container {
   width: 100%;
-  background: white;
-  padding-top: 20px;
+  background: #fefefe;
+  padding: 20px 0;
   box-shadow: inset 0px 5px 5px #DDD;
+  margin: 0 !important;
+}
+
+footer {
+  margin: 0;
+  background-color: #E74141;
+  min-height: 200px;
 }
 
