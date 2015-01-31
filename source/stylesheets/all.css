@@ -1,20 +1,44 @@
 
 header {
   font-family: 'Amatic SC', cursive;
-  font-size: 36pt;
   margin: auto;
   width: 50%;
+  font-size: 28pt;
+  text-align: center;
+}
+
+header p {
+  text-shadow: #484848 1px 1px;
+  color: white;
 }
 
 h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h1, h2 {
   font-weight: bold;
+  text-shadow: #484848 2px 2px;
+  color: white;
 }
 
 html, body {
   margin: 0;
+  background-size: cover;
+  background: url('/images/background.jpg') no-repeat center top fixed;
 }
 
 section {
   width: 50%;
   margin: auto;
 }
+
+.container {
+  width: 100%;
+  background: white;
+}
+
