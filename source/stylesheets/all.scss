@@ -5,26 +5,41 @@ header {
 
   h1, h2 {
     font-weight: bold;
-    text-shadow: #484848 2px 2px;
+    text-shadow: #484848 1px 1px;
     color: white;
   }
 }
 
 div.logo {
+  display: inline-block;
+  white-space: nowrap;
   margin-left: 20px;
   margin-top: 20px;
-  width: 305px;
   font-family: 'Voltaire', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  text-shadow: #484848 2px 2px;
-  color: white;
+  text-shadow: #FFF 1px 1px;
+  color: black;
   .red {
     color: red;
+    text-shadow: #484848 1px 1px;
   }
   .logo-right {
-    margin-top: 0px;
+    margin: 0;
+    display: inline-block;
     float: right;
+    position: relative;
+    left: -7px;
+  }
+  .dates {
+    text-shadow: #484848 1px 1px;
+    color: white;
+    font-size: 0.5em;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 200px;
   }
 }
 
