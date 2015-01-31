@@ -1,3 +1,14 @@
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 header {
   font-size: 28pt;
   width: 100vw;
@@ -13,8 +24,11 @@ header {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  transition: opacity 0.2s linear;
+  opacity: 1;
 
   font-size: 130%;
+
 
   h1 {
     margin: 0;
@@ -59,6 +73,14 @@ body {
 section {
   width: 50%;
   margin: auto;
+
+  aside, article {
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+  }
+
+  @include clearfix();
 }
 
 .container {
@@ -75,14 +97,10 @@ footer {
   min-height: 200px;
 }
 
-.cf:before,
-.cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
 
-.cf:after {
-  clear: both;
+.map-link {
+  display: block;
+  text-align: center;
 }
 
 #what, #where, #to-bring, #sponsors, #coc {
@@ -93,4 +111,12 @@ footer {
 
     border-bottom: 1px solid black;
   }
+
+  img {
+    margin: 20px 0;
+  }
+}
+
+.faded {
+  opacity: 0;
 }
