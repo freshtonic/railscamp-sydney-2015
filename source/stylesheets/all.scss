@@ -70,63 +70,11 @@ section {
   margin: 0 !important;
 }
 
-footer {
+img.lazy {
   margin: 0;
-  min-height: 100vh;
-  background: url('/images/beach-1.jpeg') no-repeat center top fixed;
-  background-size: cover;
+  display: block;
+  width: 100vw;
 }
-
-.gallery {
-  margin: 0;
-  min-height: 960px;
-  &.img-1 {
-    background: url('/images/gallery-1.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-2 {
-    background: url('/images/gallery-2.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-3 {
-    background: url('/images/gallery-3.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-4 {
-    background: url('/images/gallery-4.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-6 {
-    background: url('/images/gallery-6.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-7 {
-    background: url('/images/gallery-7.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-8 {
-    background: url('/images/gallery-8.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-9 {
-    background: url('/images/gallery-9.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-10 {
-    background: url('/images/gallery-10.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-11 {
-    background: url('/images/gallery-11.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-  &.img-12 {
-    background: url('/images/gallery-12.jpeg') no-repeat center top;
-    background-size: cover;
-  }
-}
-
-
 
 /*
 
