@@ -14,7 +14,7 @@
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+# page "/policies/index.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -23,6 +23,7 @@
 # with_layout :admin do
 #   page "/admin/*"
 # end
+
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
