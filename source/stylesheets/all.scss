@@ -63,7 +63,7 @@ body {
 }
 
 section {
-  width: 50%;
+  width: 65%;
   margin: auto;
 }
 
@@ -79,6 +79,24 @@ img.lazy {
   display: block;
   width: 100vw;
 }
+
+#organisers {
+  figure {
+
+    display: inline-block;
+
+    figcaption {
+      text-align: center;
+    }
+    img {
+      border-radius: 90px;
+    }
+  }
+  .profile-pics {
+    text-align: center;
+  }
+}
+
 
 /*
 
