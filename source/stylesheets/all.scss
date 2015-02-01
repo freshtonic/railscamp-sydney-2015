@@ -19,11 +19,6 @@ header {
   }
 }
 
-#tagline h1 {
-  font-family: 'Voltaire', sans-serif;
-  font-size: 1.5em;
-}
-
 $logo-border-color: #222;
 
 div.rails-camp {
@@ -88,8 +83,9 @@ section {
 
 footer {
   margin: 0;
-  background-color: #E74141;
-  min-height: 200px;
+  min-height: 100vh;
+  background: url('/images/background.jpg') no-repeat center top fixed;
+  background-size: cover;
 }
 
 /*
