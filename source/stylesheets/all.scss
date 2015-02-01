@@ -1,5 +1,7 @@
 section {
   font-family: 'Voltaire', sans-serif;
+  width: 65%;
+  margin: auto;
 }
 
 header {
@@ -60,11 +62,6 @@ body {
    */
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/jetty-and-rope.jpeg') no-repeat center top fixed;
   background-size: cover;
-}
-
-section {
-  width: 65%;
-  margin: auto;
 }
 
 .container {
