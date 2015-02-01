@@ -1,50 +1,54 @@
 header {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Voltaire', sans-serif;
   font-size: 4.5em;
   min-height: 100vh;
+  margin-left: 20px;
 
   h1, h2 {
     font-weight: 500;
     text-shadow: #484848 1px 1px;
     color: white;
   }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.5em;
+    text-shadow: #484848 1px 1px;
+    color: white;
+  }
 }
 
-div.logo-left {
+#tagline h1 {
+  font-family: 'Voltaire', sans-serif;
+  font-size: 1.5em;
+}
+
+$logo-border-color: #222;
+
+div.rails-camp {
+  margin-top: 20px;
   display: inline-block;
   white-space: nowrap;
-  margin-left: 20px;
-  margin-top: 20px;
   font-family: 'Voltaire', sans-serif;
   font-size: 1.5em;
   font-weight: 500;
   text-shadow: #484848 1px 1px;
   color: white;
-
-  .top-word {
-    border-top: solid 10px black;
-  }
-  .bottom-word {
-    border-bottom: solid 10px black;
-  }
 }
 
-div.logo-right {
-  float: right;
+div.sydney-2015 {
+  margin-top: 20px;
+  margin-left: 10px;
   color: red;
 
   display: inline-block;
   white-space: nowrap;
-  margin-right: 20px;
-  margin-top: 20px;
   font-family: 'Voltaire', sans-serif;
   font-size: 1.5em;
   font-weight: 500;
   text-shadow: #484848 1px 1px;
-  border-top: solid 10px black;
-  border-bottom: solid 10px black;
-  text-align: center;
-
+  text-align: left;
 }
 
 header h1 {
