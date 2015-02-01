@@ -3,20 +3,24 @@ title: Rails Camp Sydney 2015
 tag_line: Hack, Learn, and Play on the Hawkesbury River
 ---
 
+
 <header>
-  <div class="logo rails-camp">
-    RAILS<br>CAMP
+  <div class="logo-wrapper">
+    <div class="logo rails-camp">
+      RAILS<br>CAMP
+    </div>
+    <div class="logo sydney-2015">
+      SYDNEY<br>2015
+    </div>
+    <p class="location">
+      Broken Bay, Hawkesbury River
+    </p>
+    <p class='dates'>
+      Jun 12<sup>th</sup> - 15<sup>th</sup>
+    </p>
   </div>
-  <div class="logo sydney-2015">
-    SYDNEY<br>2015
-  </div>
-  <p class="location">
-    Broken Bay, Hawkesbury River
-  </p>
-  <p class='dates'>
-    Jun 12<sup>th</sup> - 15<sup>th</sup>
-  </p>
 </header>
+
 
 <div class="container">
 
@@ -142,7 +146,7 @@ tag_line: Hack, Learn, and Play on the Hawkesbury River
   <%-
     (1..12).each do |n|
   %>
-    <img src="/images/grey.gif" class="lazy" data-src="/images/gallery-<%= n %>.jpeg" width="100v%" height="auto">
+    <img src="/images/grey.gif" class="lazy" data-src="/images/gallery-<%= n %>.jpeg" width="100%" height="auto">
   <%-
     end
   %>
