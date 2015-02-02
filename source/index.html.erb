@@ -143,9 +143,10 @@ tag_line: Hack, Learn, and Play on the Hawkesbury River
 
 <div class='gallery'>
   <%-
-    (1..12).each do |n|
+    Dir.glob("./source/images/gallery*").sort.each do |f|
+      f = f.gsub(/^\.\/source/, "")
   %>
-    <img src="/images/grey.gif" class="lazy" data-src="/images/gallery-<%= n %>.jpeg" width="100%" height="auto">
+      <img src="/images/grey.gif" class="lazy" data-src="<%= f %>" width="100%" height="auto">
   <%-
     end
   %>
