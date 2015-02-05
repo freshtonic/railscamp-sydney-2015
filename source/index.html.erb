@@ -1,0 +1,166 @@
+---
+title: Rails Camp Sydney 2015
+tag_line: Hack, Learn, and Play on the Hawkesbury River
+---
+
+
+<header>
+  <div class="logo-wrapper">
+    <div class="logo-wrapper-inner">
+      <div class="logo rails-camp">
+        RAILS<br>CAMP
+      </div>
+      <div class="logo sydney-2015">
+        SYDNEY<br>2015
+      </div>
+      <p>
+        <span>Broken Bay, Hawkesbury River</span>
+      </p>
+      <p>
+        <span>June 12<sup>th</sup> - 15<sup>th</sup></span>
+      </p>
+      <p class='ticket'>
+        <span><a href='https://ti.to/ruby-australia/rails-camp-sydney-2015'>Get Ticket</a></span>
+      </p>
+    </div>
+  </div>
+</header>
+
+
+<div class="container">
+
+  <section id="what">
+    <h2>What is a Rails Camp?</h2>
+    <p>
+      Rails Camp is a place for people
+      interested in web technologies to gather, network, share ideas and generally have a great time.
+      While there's a general focus on Ruby (and Rails) developers and techy people of any background
+      are encouraged to attend.
+    </p>
+
+    <p>
+      You should come to Rails Camp if:
+    </p>
+    <ul>
+      <li>
+        You like Ruby or Rails; or
+      </li>
+      <li>
+        You're interested in web technologies; or
+      </li>
+      <li>
+        You want to play werewolf; or
+      </li>
+      <li>
+        You've got a weekend project you really want to work on
+      </li>
+    </ul>
+  </section>
+
+  <section id="where">
+    <h2>Where, When and How Much?</h2>
+    <a class="map-link" href="https://www.google.com/maps/@-33.552333,151.2438318,15z?hl=en-US" _target="blank">
+      <img id="map" src="https://maps.googleapis.com/maps/api/staticmap?center=-33.562369,%20151.264308&zoom=12&size=640x200&markers=color:blue|label:B%7C-33.562369,151.264308"/>
+    </a>
+    <p>
+      This camp will be held at the mouth of the Hawkesbury River approximately an hour north
+      of Sydney. Join us in this absolutely spectacular location where the gentle waves of the
+      Hawkesbury lap up against the sandy beach. There's abundant wildlife and views of the ocean.
+    </p>
+    <p>
+      The camp-site itself is not accessible by road, so you'll be ferried in from Brooklyn (Hawkesbury
+      River station on the Sydney rail network). We've
+      organised a ferry to all campers to and from Brooklyn. If you can't make the ferry there will
+      be a limited number of runs taking people on a smaller boat. There is extremely limited mobile
+      phone reception at camp, particularly in the buildings. Do NOT expect to be able to tether for
+      mobile data. A wireless network will be available which will have common downloads, Gems etc.
+    </p>
+    <p>
+    Tickets to the camp are $350 and can be purchased <a href='https://ti.to/ruby-australia/rails-camp-sydney-2015'>here</a>.
+    </p>
+  </section>
+
+  <section id="to-bring">
+    <h2>What should you bring?</h2>
+    <ul>
+      <li>A sleeping bag and pillow (to be confirmed).</li>
+      <li>Clothing for cool, mild weather. June is one of the driest months on the Hawkesbury but it can get cold, especially at night.</li>
+      <li>Sunscreen.</li>
+      <li>A laptop.</li>
+      <li>An idea to hack on.</li>
+      <li>Any snacks you might want. There is no access to a shop at all once you're at camp unless you're a particularly strong swimmer.</li>
+      <li>Boardgames, card games or other fun things are optional but appreciated.</li>
+    </ul>
+  </section>
+
+  <section id="sponsors">
+    <h2>Sponsors</h2>
+    <p>
+      We're actively seeking sponsors who want to support our amazing community.
+      Please contact <a href="mailto:lengarvey@bottledup">leonard@bottledup.net</a> if you or your organisation is able to help out!
+    </p>
+  </section>
+
+  <section id="coc">
+    <h2>Code of Conduct</h2>
+    <p>
+      Rails Camp Sydney is run under the auspices of Ruby Australia.
+      You can view our <a href="/policies#coc">code of conduct</a> and our <a href="/policies#anti-harrassment">anti-harrassment policy</a>.
+      These rules must be followed by all attendees.
+    </p>
+  </section>
+
+  <section id="bonus-extras">
+    <h2>Bonus Extras!</h2>
+    <h3>Fireplace in main hacking space</h3>
+
+    <p>The main hacking space has a large fireplace which will be kept tended to keep us all warm and toasty.  </p>
+
+    <h3>Campfire on the beach</h3>
+
+    <p>
+      We are permitted to have a fire on the beach, so imagine chilling out on
+      the beach in great company, relaxing with a beverage of your choosing,
+      while soaking up the warmth of a crackling fire and listening to sound of
+      the lapping water. Ahh!
+      </p>
+
+  </section>
+
+  <section id='organisers'>
+    <h2>Organisers</h2>
+    <p>
+      Rails Camp Sydney 2015 will be brought to you by these guys:
+    </p>
+    <div class="profile-pics">
+      <figure>
+        <img src="/images/leonard.jpeg" alt="Leonard Garvey" width='180px' height='180px'>
+        <figcaption>Leonard Garvey <a href='https://twitter.com/lgarvey'>@lgarvey</a></figcaption>
+      </figure>
+      <figure>
+        <img src="/images/james.jpeg" alt="James Sadler" width='180px' height='180px'>
+        <figcaption>James Sadler <a href='https://twitter.com/freshtonic'>@freshtonic</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+</div>
+
+<div class='gallery'>
+  <%-
+    Dir.glob("./source/images/gallery*").sort.each do |f|
+      f = f.gsub(/^\.\/source/, "")
+  %>
+      <img src="/images/grey.gif" class="lazy" data-src="<%= f %>" width="100%" height="auto">
+  <%-
+    end
+  %>
+</div>
+
+<div class="container">
+  <section class="yield-wrapper">
+    <div>
+      <img src="/images/display_yield.png">
+    </div>
+  </section>
+</div>

@@ -1,0 +1,158 @@
+section {
+  font-family: 'Voltaire', sans-serif;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  font-size: 1.3em;
+}
+
+header {
+  background: url('/images/jetty-and-rope.jpeg') no-repeat center top fixed;
+  background-size: cover;
+
+  @media (max-device-width: 667px) and (orientation: landscape) {
+    background-size: 100vw auto;
+  }
+
+  @media (max-device-width: 667px) and (orientation: portrait) {
+    background-size: auto 100vh;
+  }
+
+  font-family: 'Voltaire', sans-serif;
+  font-size: 4.5em;
+  min-height: 100vh;
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.5em;
+    text-shadow: #484848 1px 1px;
+    color: white;
+    a {
+      color: red;
+    }
+    &:last-child {
+      text-shadow: none;
+      margin-top: 20px;
+    }
+  }
+
+  .logo-wrapper {
+    margin-left: 20px;
+    position: fixed;
+    top: 0;
+  }
+}
+
+.logo {
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-shadow: #484848 2px 2px;
+  text-shadow: black 2px 2px;
+  font-family: 'Voltaire', sans-serif;
+  white-space: nowrap;
+  line-height: 1.0em;
+}
+
+.rails-camp {
+  padding-right: 20px;
+  color: white;
+  border-right: solid 18px #181818;
+}
+
+.sydney-2015 {
+  margin-left: 10px;
+  color: red;
+  text-align: left;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+header p {
+  text-shadow: #484848 1px 1px;
+  color: white;
+  font-weight: 600;
+  @media (max-device-width: 667px) {
+    font-weight: 500; /* avoid iOS mangling the Voltaire Google font */
+  }
+  span {
+    background: black;
+    padding: 5px;
+  }
+}
+
+html, body {
+  margin: 0;
+}
+
+
+.container {
+  width: 100%;
+  background: #F9F4F4;
+  padding: 20px 0;
+  margin: 0 !important;
+  /* Should be on top of the fixed-position header, so force
+   * a new stacking content by setting opacity to < 1.
+   * Then set z-index to be greater than .logo-wrapper. */
+  opacity: 0.99999;
+  z-index: 100;
+  &:last-child {
+    z-index: 10;
+  }
+
+  .yield-wrapper {
+    text-align: center;
+    div {
+      display: inline-block;
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      border: 2px solid #484848;
+      box-shadow: 0px 0px 3px 0px rgb(136, 136, 136);
+      background: white;
+      img {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 163px;
+        height: 109px;
+      }
+    }
+  }
+}
+
+.gallery {
+  background: #F9F4F4;
+}
+
+img.lazy {
+  margin: 0;
+  display: block;
+  width: 100vw;
+}
+
+#organisers {
+  figure {
+
+    display: inline-block;
+
+    figcaption {
+      text-align: center;
+    }
+    img {
+      border-radius: 90px;
+    }
+  }
+  .profile-pics {
+    text-align: center;
+  }
+}
+
