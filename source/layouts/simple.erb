@@ -10,28 +10,10 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
 
     <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag "normalize", "simple" %>
+    <%= stylesheet_link_tag "normalize", "all", "simple" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <header>
-      <div class="logo rails-camp">
-        RAILS<br>CAMP
-      </div>
-      <div class="logo sydney-2015">
-        SYDNEY<br>2015
-      </div>
-      <p class="location">
-        Broken Bay, Hawkesbury River
-      </p>
-      <p class='dates'>
-        Jun 12<sup>th</sup> - 15<sup>th</sup>
-      </p>
-    </header>
-    <div class="container">
-      <article class="main">
-        <%= yield %>
-      </article>
-    </div>
+    <%= yield %>
   </body>
 </html>

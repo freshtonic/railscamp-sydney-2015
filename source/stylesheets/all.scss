@@ -1,12 +1,14 @@
 section {
   font-family: 'Voltaire', sans-serif;
   width: 65%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 800px;
+  font-size: 1.3em;
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/jetty-and-rope.jpeg') no-repeat center top fixed;
+  background: url('/images/jetty-and-rope.jpeg') no-repeat center top fixed;
   background-size: cover;
 
   @media (max-device-width: 667px) and (orientation: landscape) {
@@ -27,6 +29,13 @@ header {
     font-size: 0.5em;
     text-shadow: #484848 1px 1px;
     color: white;
+    a {
+      color: red;
+    }
+    &:last-child {
+      text-shadow: none;
+      margin-top: 20px;
+    }
   }
 
   .logo-wrapper {
@@ -39,9 +48,10 @@ header {
 .logo {
   margin-top: 20px;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5em;
-  text-shadow: #484848 1px 1px;
+  text-shadow: #484848 2px 2px;
+  text-shadow: black 2px 2px;
   font-family: 'Voltaire', sans-serif;
   white-space: nowrap;
   line-height: 1.0em;
@@ -50,7 +60,7 @@ header {
 .rails-camp {
   padding-right: 20px;
   color: white;
-  border-right: solid 10px #181818;
+  border-right: solid 18px #181818;
 }
 
 .sydney-2015 {
@@ -66,7 +76,14 @@ header h1 {
 header p {
   text-shadow: #484848 1px 1px;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
+  @media (max-device-width: 667px) {
+    font-weight: 500; /* avoid iOS mangling the Voltaire Google font */
+  }
+  span {
+    background: black;
+    padding: 5px;
+  }
 }
 
 html, body {
@@ -84,6 +101,9 @@ html, body {
    * Then set z-index to be greater than .logo-wrapper. */
   opacity: 0.99999;
   z-index: 100;
+  &:last-child {
+    z-index: 10;
+  }
 
   .yield-wrapper {
     text-align: center;
@@ -135,3 +155,4 @@ img.lazy {
     text-align: center;
   }
 }
+
