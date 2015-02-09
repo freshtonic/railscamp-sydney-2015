@@ -1,10 +1,10 @@
-/* line 2, /Users/artega/dev/railscamp/railscamp-broken-bay-2015/source/stylesheets/simple.scss */
+/* line 2, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/simple.scss */
 header {
   background: url("/images/jetty-and-rope.jpeg") no-repeat center bottom fixed;
   background-size: cover;
   min-height: 50vh;
   max-height: 50vh; }
-  /* line 6, /Users/artega/dev/railscamp/railscamp-broken-bay-2015/source/stylesheets/simple.scss */
+  /* line 6, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/simple.scss */
   header .logo-wrapper {
     margin-left: 0;
     position: inherit;
