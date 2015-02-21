@@ -27,8 +27,17 @@ header {
     margin-top: 0;
   }
 
+  .price {
+    color: black;
+    background: white;
+    padding: 5px;
+    padding-right: 0;
+  }
+
   p {
-    display: table;
+    display: inline-block;
+    float: left;
+    clear: both;
     margin-top: 10px;
     margin-left: 0;
     margin-bottom: 0;
@@ -47,6 +56,8 @@ header {
     }
     &.ticket {
       text-shadow: none;
+      padding-right: 0;
+      border-right: solid 5px white;
     }
     background: black;
   }
