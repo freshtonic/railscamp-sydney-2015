@@ -1,0 +1,72 @@
+---
+title: Student ticket application 
+layout: simple
+---
+<div class="student-ticket-application-form">
+  <h1>Application for a student ticket</h1>
+  <p>
+  If you are a student and would like to attend RailsCamp Sydney, but find
+  the cost of a full price ticket prohibitive, then you are ellegible to
+  apply for a $50 student ticket. 
+  </p>
+  <p>
+  Student tickets are paid for by our
+  amazing sponsors and are limited in number. Please complete the application
+  form below.
+  </p>
+  <p>
+  Applicants will be notified via email in due course about the success of their
+  application. Successful applicants will be invited to purchase a $50 ticket.
+  </p>
+  <form id='#application-form'>
+    <div>
+      <label for='name'>Full name</label>
+      <input type='text' size='50' id='name'>
+    </div>
+    <div>
+      <label for='email'>Email</label>
+      <input type='text' size='50' id='email'>
+    </div>
+    <div>
+      <label for='mobile'>Mobile number</label>
+      <input type='text' size='50' id='mobile'>
+    </div>
+    <div>
+      <label for='want'>What do you want to get out of an event like RailsCamp?</label>
+      <textarea cols='50' rows='3' id='want'></textarea>
+    </div>
+    <div>
+      <label for='learn'>What have you been doing to learn about Rails/web development?</label>
+      <textarea cols='50' rows='3' id='learn'></textarea>
+    <div>
+      <label for='groups'>Which user groups and/or meetups do you attend?</label>
+      <textarea cols='50' rows='3' id='groups'></textarea>
+    </div>
+    <button onclick="submitApplication()">Send my application</button>
+  </form>
+  <p>
+  We would love RailsCamp to host as many students as possible! If you are a sponsor and would
+  like to sponsor one or more student tickets, please contact Keith Pitty (<a href="mailto:keith@keithpitty.com">keith@keithpitty.com</a>).
+  </p>
+</div>
+
+<script>
+  function submitApplication(e) {
+    var textOf = function(sel) {
+      return document.querySelector(sel).value;
+    };
+    var subject = "RailsCamp Sydney Student Ticket Application";
+    var body = [
+      "Name: " + textOf('#name'),
+      "Email: " + textOf('#email'),
+      "Mobile: " + textOf('#mobile'),
+      "What do you want to get out of an event like RailsCamp?\n\n" + textOf('#want'),
+      "What have you been doing to learn about Rails/web development?\n\n" + textOf('#learn'),
+      "Which user groups and/or meetups do you attend?\n\n" + textOf('#groups')
+    ].join("\n");
+
+    window.open("mailto:lengarvey@bottledup.net?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
+    e.preventDefault();
+    return false;
+  }
+</script>

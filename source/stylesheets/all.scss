@@ -1,10 +1,10 @@
 section {
   font-family: 'Voltaire', sans-serif;
+  font-size: 1.3em;
   width: 65%;
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
-  font-size: 1.3em;
 }
 
 header {
@@ -70,6 +70,10 @@ header {
 }
 
 .logo {
+  &.rails-camp {
+    clear: both;
+    float: left;
+  }
   margin-top: 20px;
   display: inline-block;
   font-weight: 600;
@@ -163,3 +167,34 @@ img.lazy {
   }
 }
 
+.student-ticket-application-form {
+  box-sizing: border-box;
+  font-family: 'Voltaire', sans-serif;
+  font-size: 1.3em;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+  form {
+    input, textarea {
+      font-family: 'Courier new', monospace;
+      font-size: 0.8em;
+      border: 2px solid black;
+      padding: 5px;
+    }
+    label {
+      margin-top: 5px;
+      display: block;
+    }
+  }
+
+  button {
+    color: white;
+    background: black;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 1.3em;
+    border: 3px solid black;
+    margin-top: 10px;
+  }
+}
