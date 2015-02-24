@@ -191,11 +191,12 @@ img.lazy {
   padding: 3px;
   padding-right: 0px;
   border: 3px solid black;
-  font-size: 1.2em; }
+  font-size: 1.4em; }
   /* line 208, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   .awesome a {
     display-inline: block;
     padding: 3px;
     padding-left: 5px;
     background: red;
-    color: white; }
+    color: white;
+    font-weight: bold; }
