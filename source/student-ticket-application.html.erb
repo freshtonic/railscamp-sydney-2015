@@ -18,6 +18,11 @@ layout: simple
   Applicants will be notified via email in due course about the success of their
   application. Successful applicants will be invited to purchase a $50 ticket.
   </p>
+  <p>
+  <span class='awesome'>
+  10 student tickets will be paid for by our amazing sponsor <a href='https://reinteractive.net'>reinteractive</a>
+  </span>
+  </p>
   <form id='#application-form'>
     <div>
       <label for='name'>Full name</label>
@@ -63,7 +68,7 @@ layout: simple
       "What do you want to get out of an event like RailsCamp?\n\n" + textOf('#want'),
       "What have you been doing to learn about Rails/web development?\n\n" + textOf('#learn'),
       "Which user groups and/or meetups do you attend?\n\n" + textOf('#groups')
-    ].join("\n");
+    ].join("\n\n");
 
     window.open("mailto:lengarvey@bottledup.net?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
     e.preventDefault();
