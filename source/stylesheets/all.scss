@@ -20,10 +20,6 @@ header {
   font-size: 4.5em;
   min-height: 100vh;
 
-  ul {
-    list-style-type: none;
-  }
-
   h1 {
     float: left;
     clear: both;
@@ -41,56 +37,40 @@ header {
     background: black;
   }
 
-  p {
+  p.get-ticket {
+    text-shadow: #484848 1px 1px;
     display: inline-block;
     float: left;
     clear: both;
     margin-top: 10px;
     margin-left: 0;
     margin-bottom: 0;
-    padding: 5px;
     font-size: 0.5em;
-    font-weight: 600;
-    @media (max-device-width: 667px) {
-      font-weight: 500; /* avoid iOS mangling the Voltaire Google font */
-    }
-    text-shadow: #484848 1px 1px;
-    color: white;
-    &.ticket {
-      font-size: 0.4em;
-      text-shadow: none;
-      padding-right: 0;
-      padding-left: 0;
-      a {
-        background: black;
-        color: red;
-        padding: 5px;
-      }
-    }
-    background-color: black;
-    &.note {
-      font-size: 0.3em;
-      background: white;
-      color: black;
-      text-shadow: none;
-      max-width: 70%;
-    }
-    .price {
-      color: black;
-      background: white;
-      display: inline-block;
-      width: 75px;
-      text-align: center;
-      margin-top: -5px;
-      border-top: solid 5px white;
-      margin-bottom: -5px;
-      border-bottom: solid 5px white;
+    background: black;
+    padding: 5px;
+    
+    a {
+      color: red;
     }
   }
 
   .logo-wrapper {
     margin-left: 20px;
     top: 0;
+  }
+
+  .sponsor-logos {
+    opacity: 0.8;
+    clear: both;
+    float: left;
+    background: white;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    div {
+      display: inline-block;
+    }
   }
 }
 
@@ -277,16 +257,27 @@ img.lazy {
 }
 
 .buildkite-logo {
-  margin: 10px;
-  margin-top: 20px;
   width: 200px;
   height: auto;
 }
 
 .reinteractive-logo img {
-  margin: 10px;
-  margin-top: 20px;
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: -10px;
+}
+
+.lookahead-logo img {
   width: 200px;
   height: auto;
 }
 
+section#tickets {
+  .reinteractive-logo {
+    margin: 20px;
+  }
+  .buildkite-logo {
+    margin: 20px;
+  }
+}
