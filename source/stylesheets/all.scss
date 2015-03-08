@@ -20,6 +20,10 @@ header {
   font-size: 4.5em;
   min-height: 100vh;
 
+  ul {
+    list-style-type: none;
+  }
+
   h1 {
     float: left;
     clear: both;
@@ -35,11 +39,6 @@ header {
     text-shadow: #484848 1px 1px;
     color: white;
     background: black;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
   }
 
   p {
@@ -92,6 +91,49 @@ header {
   .logo-wrapper {
     margin-left: 20px;
     top: 0;
+  }
+}
+
+ul.tickets {
+  list-style-type: none;
+  padding: 0;
+  p {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    text-shadow: #484848 1px 1px;
+    color: white;
+    &.ticket {
+      font-size: 1.3em;
+      text-shadow: none;
+      padding-right: 0;
+      padding-left: 0;
+      a {
+        background: black;
+        color: red;
+        padding: 5px;
+      }
+    }
+    background-color: black;
+    &.note {
+      color: black;
+      background: #F9F4F4;
+      text-shadow: none;
+      max-width: 70%;
+    }
+    .price {
+      color: black;
+      background: white;
+      display: inline-block;
+      width: 75px;
+      text-align: center;
+      margin-top: -5px;
+      border-top: solid 5px white;
+      margin-bottom: -5px;
+      border-bottom: solid 5px white;
+    }
   }
 }
 
@@ -233,3 +275,18 @@ img.lazy {
     font-weight: bold;
   }
 }
+
+.buildkite-logo {
+  margin: 10px;
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+}
+
+.reinteractive-logo img {
+  margin: 10px;
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+}
+
