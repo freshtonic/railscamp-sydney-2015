@@ -8,15 +8,12 @@ section {
 }
 
 header {
-  background: url('/images/jetty-and-rope.jpeg') no-repeat center top fixed;
+  overflow: auto;
+  background: url('/images/jetty-and-rope.jpeg') no-repeat center top;
   background-size: cover;
 
   @media (max-device-width: 667px) and (orientation: landscape) {
     background-size: 100vw auto;
-  }
-
-  @media (max-device-width: 667px) and (orientation: portrait) {
-    background-size: auto 100vh;
   }
 
   font-family: 'Voltaire', sans-serif;
@@ -24,14 +21,25 @@ header {
   min-height: 100vh;
 
   h1 {
-    margin-top: 0;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    font-size: 0.5em;
+    font-weight: 600;
+    @media (max-device-width: 667px) {
+      font-weight: 500; /* avoid iOS mangling the Voltaire Google font */
+    }
+    text-shadow: #484848 1px 1px;
+    color: white;
+    background: black;
   }
 
-  .price {
-    color: black;
-    background: white;
-    padding: 5px;
-    padding-right: 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
   }
 
   p {
@@ -49,22 +57,40 @@ header {
     }
     text-shadow: #484848 1px 1px;
     color: white;
-    a {
-      background: black;
-      color: red;
-      padding: 5px;
-    }
     &.ticket {
+      font-size: 0.4em;
       text-shadow: none;
       padding-right: 0;
-      border-right: solid 5px white;
+      padding-left: 0;
+      a {
+        background: black;
+        color: red;
+        padding: 5px;
+      }
     }
-    background: black;
+    background-color: black;
+    &.note {
+      font-size: 0.3em;
+      background: white;
+      color: black;
+      text-shadow: none;
+      max-width: 70%;
+    }
+    .price {
+      color: black;
+      background: white;
+      display: inline-block;
+      width: 75px;
+      text-align: center;
+      margin-top: -5px;
+      border-top: solid 5px white;
+      margin-bottom: -5px;
+      border-bottom: solid 5px white;
+    }
   }
 
   .logo-wrapper {
     margin-left: 20px;
-    position: fixed;
     top: 0;
   }
 }
@@ -86,7 +112,7 @@ header {
 }
 
 .rails-camp {
-  padding-right: 20px;
+  padding-right: 13px;
   color: white;
   border-right: solid 18px #181818;
 }
@@ -103,18 +129,11 @@ html, body {
 
 
 .container {
+  margin-top: 20px;
   width: 100%;
   background: #F9F4F4;
   padding: 20px 0;
   margin: 0 !important;
-  /* Should be on top of the fixed-position header, so force
-   * a new stacking content by setting opacity to < 1.
-   * Then set z-index to be greater than .logo-wrapper. */
-  opacity: 0.99999;
-  z-index: 100;
-  &:last-child {
-    z-index: 10;
-  }
 
   .yield-wrapper {
     text-align: center;
