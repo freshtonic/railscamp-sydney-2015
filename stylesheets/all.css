@@ -9,7 +9,8 @@ section {
 
 /* line 10, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 header {
-  background: url("/images/jetty-and-rope.jpeg") no-repeat center top fixed;
+  overflow: auto;
+  background: url("/images/jetty-and-rope.jpeg") no-repeat center top;
   background-size: cover;
   font-family: 'Voltaire', sans-serif;
   font-size: 4.5em;
@@ -18,22 +19,8 @@ header {
     /* line 10, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
     header {
       background-size: 100vw auto; } }
-  @media (max-device-width: 667px) and (orientation: portrait) {
-    /* line 10, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
-    header {
-      background-size: auto 100vh; } }
-  /* line 26, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  /* line 23, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   header h1 {
-    margin-top: 0; }
-  /* line 30, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
-  header .price {
-    color: black;
-    background: white;
-    padding: 5px;
-    padding-right: 0; }
-  /* line 37, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
-  header p {
-    display: inline-block;
     float: left;
     clear: both;
     margin-top: 10px;
@@ -46,27 +33,87 @@ header {
     color: white;
     background: black; }
     @media (max-device-width: 667px) {
-      /* line 37, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
-      header p {
+      /* line 23, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+      header h1 {
         font-weight: 500;
         /* avoid iOS mangling the Voltaire Google font */ } }
+  /* line 40, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  header p.get-ticket {
+    text-shadow: #484848 1px 1px;
+    display: inline-block;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 0.5em;
+    background: black;
+    padding: 5px; }
     /* line 52, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
-    header p a {
-      background: black;
-      color: red;
-      padding: 5px; }
-    /* line 57, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
-    header p.ticket {
-      text-shadow: none;
-      padding-right: 0;
-      border-right: solid 5px white; }
-  /* line 65, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+    header p.get-ticket a {
+      color: red; }
+  /* line 57, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   header .logo-wrapper {
     margin-left: 20px;
-    position: fixed;
     top: 0; }
+  /* line 62, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  header .sponsor-logos {
+    opacity: 0.8;
+    clear: both;
+    float: left;
+    background: white;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px; }
+    /* line 71, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+    header .sponsor-logos div {
+      display: inline-block; }
 
-/* line 72, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 77, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+ul.tickets {
+  list-style-type: none;
+  padding: 0; }
+  /* line 80, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  ul.tickets p {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    text-shadow: #484848 1px 1px;
+    color: white;
+    background-color: black; }
+    /* line 88, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+    ul.tickets p.ticket {
+      font-size: 1.3em;
+      text-shadow: none;
+      padding-right: 0;
+      padding-left: 0; }
+      /* line 93, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+      ul.tickets p.ticket a {
+        background: black;
+        color: red;
+        padding: 5px; }
+    /* line 100, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+    ul.tickets p.note {
+      color: black;
+      background: #F9F4F4;
+      text-shadow: none;
+      max-width: 70%; }
+    /* line 106, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+    ul.tickets p .price {
+      color: black;
+      background: white;
+      display: inline-block;
+      width: 75px;
+      text-align: center;
+      margin-top: -5px;
+      border-top: solid 5px white;
+      margin-bottom: -5px;
+      border-bottom: solid 5px white; }
+
+/* line 120, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 .logo {
   margin-top: 20px;
   display: inline-block;
@@ -77,45 +124,38 @@ header {
   font-family: 'Voltaire', sans-serif;
   white-space: nowrap;
   line-height: 1.0em; }
-  /* line 73, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  /* line 121, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   .logo.rails-camp {
     clear: both;
     float: left; }
 
-/* line 88, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 136, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 .rails-camp {
-  padding-right: 20px;
+  padding-right: 13px;
   color: white;
   border-right: solid 18px #181818; }
 
-/* line 94, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 142, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 .sydney-2015 {
   margin-left: 10px;
   color: red;
   text-align: left; }
 
-/* line 100, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 148, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 html, body {
   margin: 0; }
 
-/* line 105, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 153, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 .container {
+  margin-top: 20px;
   width: 100%;
   background: #F9F4F4;
   padding: 20px 0;
-  margin: 0 !important;
-  /* Should be on top of the fixed-position header, so force
-   * a new stacking content by setting opacity to < 1.
-   * Then set z-index to be greater than .logo-wrapper. */
-  opacity: 0.99999;
-  z-index: 100; }
-  /* line 115, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
-  .container:last-child {
-    z-index: 10; }
-  /* line 119, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  margin: 0 !important; }
+  /* line 160, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   .container .yield-wrapper {
     text-align: center; }
-    /* line 121, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+    /* line 162, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
     .container .yield-wrapper div {
       display: inline-block;
       position: relative;
@@ -125,7 +165,7 @@ html, body {
       border: 2px solid #484848;
       box-shadow: 0px 0px 3px 0px #888888;
       background: white; }
-      /* line 130, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+      /* line 171, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
       .container .yield-wrapper div img {
         position: absolute;
         left: 20px;
@@ -135,30 +175,30 @@ html, body {
         width: 163px;
         height: 109px; }
 
-/* line 143, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 184, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 .gallery {
   background: #F9F4F4; }
 
-/* line 147, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 188, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 img.lazy {
   margin: 0;
   display: block;
   width: 100vw; }
 
-/* line 154, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 195, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 #organisers figure {
   display: inline-block; }
-  /* line 158, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  /* line 199, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   #organisers figure figcaption {
     text-align: center; }
-  /* line 161, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  /* line 202, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   #organisers figure img {
     border-radius: 90px; }
-/* line 165, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 206, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 #organisers .profile-pics {
   text-align: center; }
 
-/* line 170, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 211, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 .student-ticket-application-form {
   box-sizing: border-box;
   font-family: 'Voltaire', sans-serif;
@@ -167,17 +207,17 @@ img.lazy {
   margin-left: auto;
   margin-right: auto;
   padding: 20px; }
-  /* line 180, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  /* line 221, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   .student-ticket-application-form form input, .student-ticket-application-form form textarea {
     font-family: 'Courier new', monospace;
     font-size: 0.8em;
     border: 2px solid black;
     padding: 5px; }
-  /* line 186, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  /* line 227, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   .student-ticket-application-form form label {
     margin-top: 5px;
     display: block; }
-  /* line 192, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  /* line 233, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   .student-ticket-application-form button {
     color: white;
     background: black;
@@ -186,13 +226,13 @@ img.lazy {
     border: 3px solid black;
     margin-top: 10px; }
 
-/* line 202, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+/* line 243, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
 .awesome {
   padding: 3px;
   padding-right: 0px;
   border: 3px solid black;
   font-size: 1.4em; }
-  /* line 208, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+  /* line 249, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
   .awesome a {
     display-inline: block;
     padding: 3px;
@@ -200,3 +240,27 @@ img.lazy {
     background: red;
     color: white;
     font-weight: bold; }
+
+/* line 259, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+.buildkite-logo {
+  width: 200px;
+  height: auto; }
+
+/* line 264, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+.reinteractive-logo img {
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: -10px; }
+
+/* line 271, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+.lookahead-logo img {
+  width: 200px;
+  height: auto; }
+
+/* line 277, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+section#tickets .reinteractive-logo {
+  margin: 20px; }
+/* line 280, /Users/james/projects/railscamp-sydney-2015/source/stylesheets/all.scss */
+section#tickets .buildkite-logo {
+  margin: 20px; }
