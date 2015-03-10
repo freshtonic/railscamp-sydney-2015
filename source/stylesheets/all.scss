@@ -8,15 +8,12 @@ section {
 }
 
 header {
-  background: url('/images/jetty-and-rope.jpeg') no-repeat center top fixed;
+  overflow: auto;
+  background: url('/images/jetty-and-rope.jpeg') no-repeat center top;
   background-size: cover;
 
   @media (max-device-width: 667px) and (orientation: landscape) {
     background-size: 100vw auto;
-  }
-
-  @media (max-device-width: 667px) and (orientation: portrait) {
-    background-size: auto 100vh;
   }
 
   font-family: 'Voltaire', sans-serif;
@@ -24,18 +21,6 @@ header {
   min-height: 100vh;
 
   h1 {
-    margin-top: 0;
-  }
-
-  .price {
-    color: black;
-    background: white;
-    padding: 5px;
-    padding-right: 0;
-  }
-
-  p {
-    display: inline-block;
     float: left;
     clear: both;
     margin-top: 10px;
@@ -49,23 +34,86 @@ header {
     }
     text-shadow: #484848 1px 1px;
     color: white;
-    a {
-      background: black;
-      color: red;
-      padding: 5px;
-    }
-    &.ticket {
-      text-shadow: none;
-      padding-right: 0;
-      border-right: solid 5px white;
-    }
     background: black;
+  }
+
+  p.get-ticket {
+    text-shadow: #484848 1px 1px;
+    display: inline-block;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 0.5em;
+    background: black;
+    padding: 5px;
+    
+    a {
+      color: red;
+    }
   }
 
   .logo-wrapper {
     margin-left: 20px;
-    position: fixed;
     top: 0;
+  }
+
+  .sponsor-logos {
+    opacity: 0.8;
+    clear: both;
+    float: left;
+    background: white;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    div {
+      display: inline-block;
+    }
+  }
+}
+
+ul.tickets {
+  list-style-type: none;
+  padding: 0;
+  p {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 5px;
+    text-shadow: #484848 1px 1px;
+    color: white;
+    &.ticket {
+      font-size: 1.3em;
+      text-shadow: none;
+      padding-right: 0;
+      padding-left: 0;
+      a {
+        background: black;
+        color: red;
+        padding: 5px;
+      }
+    }
+    background-color: black;
+    &.note {
+      color: black;
+      background: #F9F4F4;
+      text-shadow: none;
+      max-width: 70%;
+    }
+    .price {
+      color: black;
+      background: white;
+      display: inline-block;
+      width: 75px;
+      text-align: center;
+      margin-top: -5px;
+      border-top: solid 5px white;
+      margin-bottom: -5px;
+      border-bottom: solid 5px white;
+    }
   }
 }
 
@@ -86,7 +134,7 @@ header {
 }
 
 .rails-camp {
-  padding-right: 20px;
+  padding-right: 13px;
   color: white;
   border-right: solid 18px #181818;
 }
@@ -103,18 +151,11 @@ html, body {
 
 
 .container {
+  margin-top: 20px;
   width: 100%;
   background: #F9F4F4;
   padding: 20px 0;
   margin: 0 !important;
-  /* Should be on top of the fixed-position header, so force
-   * a new stacking content by setting opacity to < 1.
-   * Then set z-index to be greater than .logo-wrapper. */
-  opacity: 0.99999;
-  z-index: 100;
-  &:last-child {
-    z-index: 10;
-  }
 
   .yield-wrapper {
     text-align: center;
@@ -212,5 +253,31 @@ img.lazy {
     background: red;
     color: white;
     font-weight: bold;
+  }
+}
+
+.buildkite-logo {
+  width: 200px;
+  height: auto;
+}
+
+.reinteractive-logo img {
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: -10px;
+}
+
+.lookahead-logo img {
+  width: 200px;
+  height: auto;
+}
+
+section#tickets {
+  .reinteractive-logo {
+    margin: 20px;
+  }
+  .buildkite-logo {
+    margin: 20px;
   }
 }
