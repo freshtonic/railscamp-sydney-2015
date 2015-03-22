@@ -64,13 +64,9 @@ header {
     clear: both;
     float: left;
     background: white;
-    margin-top: 20px;
     padding: 0;
     padding-left: 10px; 
     padding-right: 10px; 
-    div {
-      display: inline-block;
-    }
   }
 }
 
@@ -256,21 +252,44 @@ img.lazy {
   }
 }
 
-.buildkite-logo {
-  width: 200px;
-  height: auto;
-}
+.sponsor-logo {
+  
+  margin-top: 40px;
+  margin-bottom: 40px;
 
-.reinteractive-logo img {
-  width: 200px;
-  height: auto;
-  position: relative;
-  top: -10px;
-}
+  &.buildkite svg {
+    width: 300px;
+    height: auto;
+  }
 
-.lookahead-logo img {
-  width: 200px;
-  height: auto;
+  &.reinteractive img {
+    width: 300px;
+    height: auto;
+    /* position: relative;
+    top: -10px; */
+  }
+
+  &.lookahead img {
+    width: 300px;
+    height: auto;
+  }
+
+  &.blake img {
+    width: auto;
+    height: 150px;
+    position: relative;
+    left: 70px;
+  }
+ 
+  &.realestate img {
+    width: 300px;
+    height: auto;
+  }
+
+  &.siteminder img {
+    width: 300px;
+    height: auto;
+  }
 }
 
 section#tickets {
@@ -279,5 +298,28 @@ section#tickets {
   }
   .buildkite-logo {
     margin: 20px;
+  }
+}
+
+.thanks {
+  .love {
+    color: red;
+    font-size: 1.2em;
+    text-shadow: black 1px 1px 1px;
+  }
+}
+
+.columns {
+
+  clear:left;
+  float:left;
+  width:100%;
+
+  .column.left {
+    float:left;
+  }
+  .column.right {
+    margin-left: 40px;
+    float:left;
   }
 }
