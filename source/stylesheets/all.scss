@@ -86,10 +86,17 @@ ul.tickets {
       text-shadow: none;
       padding-right: 0;
       padding-left: 0;
-      a {
+      a, .ticket-details {
         background: black;
         color: red;
         padding: 5px;
+      }
+    }
+    &.sold-out {
+      filter: grayscale(100%) contrast(40%);
+      -webkit-filter: grayscale(100%) contrast(40%);
+      .price, .ticket-details {
+        text-decoration: line-through;
       }
     }
     background-color: black;
