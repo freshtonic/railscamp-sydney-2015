@@ -302,6 +302,11 @@ img.lazy {
     width: 300px;
     height: auto;
   }
+
+  &.fat-zebra img {
+    width: 300px;
+    height: auto;
+  }
 }
 
 section#tickets {
