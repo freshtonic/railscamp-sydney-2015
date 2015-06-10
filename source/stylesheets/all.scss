@@ -37,7 +37,8 @@ header {
     background: black;
   }
 
-  p.get-ticket {
+  p.get-ticket, p.important-info {
+    color: white;
     text-shadow: #484848 1px 1px;
     display: inline-block;
     float: left;
